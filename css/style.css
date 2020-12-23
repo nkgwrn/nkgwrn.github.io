@@ -5,8 +5,7 @@
 }
 
 body {
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
-  "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",
   "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 15px;
   line-height: 1.8;
@@ -17,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #1ca9e3;
+  color: #41B2BE;
 }
 
 img {
@@ -75,7 +74,7 @@ li {
 }
 
 .section-lead {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   text-align: center;
 }
 
@@ -95,7 +94,7 @@ li {
 }
 
 .section:nth-of-type(odd) {
-  background-color: #f7f7f7;
+  background-color: #e0eaf1;
 }
 
 .inner {
@@ -112,13 +111,31 @@ li {
   align-items: center;
   justify-content: center;
   height: 86vh;
+  background: url(../img/bg_header.jpg);
+  background-attachment: fixed;
+  position: relative;
 }
+
+.header::after {
+  content: '';
+  background-color: rgba(0,0,0,.3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 86vh;
+  z-index: 1;
+}
+
 
 .logo {
   position: relative;
   margin-bottom: 30px;
   padding: 0 20px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .logo-title {
@@ -126,13 +143,15 @@ li {
   font-size: 64px;
   line-height: 1;
   letter-spacing: .2em;
+  color: #41B2BE;
 }
 
 .logo-subtitle {
   font-size: 20px;
-  margin-top: 5px;
+  margin-top: 15px;
   text-align: center;
   letter-spacing: .2em;
+  color: #CDDAE2;
 }
 
 /*--------------------------------
@@ -172,6 +191,10 @@ li {
   color: #333;
 }
 
+.gnav-link.is-current:after {
+  width: 100%;
+}
+
 .gnav-link:hover {
   opacity: 1;
 }
@@ -186,7 +209,7 @@ li {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: #E969A7;
 }
 
 .gnav-link:hover:after {
@@ -209,9 +232,9 @@ li {
 }
 
 .works-item {
-  flex: 0 0 32.31552%;
-  margin-right: 1.52671%;
-  margin-bottom: 40px;
+  flex: 0 0 30%;
+  margin-right: 5%;
+  margin-bottom: 60px;
 }
 
 .works-item:nth-of-type(3n) {
@@ -223,17 +246,42 @@ li {
 }
 
 .works-title {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   margin-top: 8px;
 }
 
+.works-title a {
+  color: #333;
+  transition: .3s all ease;
+}
+
+.works-title span {
+  color: #333;
+  display: block;
+  font-size: 10px;
+}
+
+.works-title a:hover {
+  color: #41B2BE;
+}
+
 .works-text {
   font-size: 10px;
+  color: #41B2BE;
+  margin-top: 10px;
 }
 
 .works-url {
   font-size: 10px;
+}
+
+.works-url a {
+  color: #41B2BE;
+}
+
+.works-url a:hover {
+  text-decoration: underline;
 }
 
 .works-image.fadein {
@@ -244,6 +292,24 @@ li {
 
 .works-image.fadein.lazyloaded {
   opacity: 1;
+}
+
+.works-ctg {
+  font-size: 11px;
+  margin-top: 20px;
+}
+
+.works-ctg span {
+  border: 1px solid #E969A7;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0px 5px;
+  color: #E969A7;
+  font-weight: bold;
+}
+
+.works-ctg span ~ span {
+  margin-left: 1em;
 }
 
 /*--------------------------------
@@ -412,7 +478,7 @@ li {
  フッター
 ---------------------------------*/
 .footer {
-  background-color: #1d1d1d;
+  background-color: #989CA0;
 }
 
 .footer .inner {
@@ -422,7 +488,7 @@ li {
 .copyright {
   font-size: 10px;
   text-align: center;
-  color: #8c8c8c;
+  color: #fff;
 }
 
 .page-top {
@@ -432,7 +498,7 @@ li {
   padding: 10px;
   cursor: pointer;
   text-align: center;
-  background-color: #ccc;
+  background-color: #E969A7;
 }
 
 /*media Queries 767
@@ -523,11 +589,11 @@ li {
 
   /* Works */
   .works-body {
-    text-align: left;
+    /* text-align: left; */
   }
 
   .works-title {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .works-list {
@@ -535,7 +601,7 @@ li {
   }
 
   .works-item {
-    flex: 0 0 48%;
+    flex: 0 0 100%;
     margin-right: 0;
     margin-bottom: 30px;
   }

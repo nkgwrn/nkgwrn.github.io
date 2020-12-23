@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <meta property='og:type' content='website'>
-  <meta property='og:title' content='WebデザイナーTARO YAMADA ポートフォリオ'>
+  <meta property='og:title' content='rino'>
   <meta property='og:url' content='URLが入る'>
-  <meta property='og:description' content='Webデザイナー TARO YAMADAのポートフォリオサイトです！'>
+  <meta property='og:description' content='フロントエンエンジニア Rinoのポートフォリオサイトです。'>
   <meta property="og:image" content="img/ogp.png">
-  <meta name="description" content="Webデザイナー TARO YAMADAのポートフォリオサイトです！" />
-  <title>Webデザイナー TARO YAMADA ポートフォリオ</title>
+  <meta name="description" content="フロントエンエンジニア Rinoのポートフォリオサイトです。" />
+  <title>rino</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
   <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
@@ -24,20 +25,19 @@
 
     <!-- .gnav -->
     <nav class="gnav" class="fixed">
-      <ul class="gnav-list">
+      <ul class="gnav-list" id="js-gnav">
+        <!-- <li class="gnav-item"><a class="gnav-link" href="#top-section">TOP</a></li> -->
         <li class="gnav-item"><a class="gnav-link" href="#works-section">WORKS</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#practice-section">PRACTICE</a></li>
         <li class="gnav-item"><a class="gnav-link" href="#feature-section">FEATURE</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
-        <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
       </ul>
     </nav>
     <!-- /.gnav -->
 
     <!-- .header -->
-    <header class="header">
+    <header class="header" id="top-section">
       <h1 class="logo">
-        <div class="logo-title">TARO YAMADA</div>
+        <div class="logo-title">Rino Nakgawara</div>
         <div class="logo-subtitle">PORTFOLIO</div>
       </h1>
     </header>
@@ -52,73 +52,109 @@
             <h2 class="heading-primary">WORKS</h2>
           </div>
           <div class="section-lead">
-            <p>Web（デザインとコーディング）制作の記録です。<br>デザイン練習用の架空サイト（ファーストビューのみ）も含んでおります。</p>
+            <p>Web（コーディング）制作の記録です。</p>
           </div>
           <div class="section-body works">
             <div class="works-list js-my-gallery">
               <figure class="works-item">
-                <a href="img/works/company.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
-                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/company.jpg"
-                    alt="" />
-                </a>
-                <figcaption class="works-body">
-                  <div class="works-title">サイト名が入る</div>
-                  <div class="works-text">Design / Coding(Responsive) / WordPress</div>
-                  <div class="works-url"><a class="works-url-link" href="https://yahoo.co.jp" target="_blank">Link</a>
-                  </div>
-                </figcaption>
-              </figure>
-              <figure class="works-item">
-                <a href="img/works/hairsalon.jpg" data-size="960x720"
-                  class="works-image-wrapper works-link hover-action">
+                <a href="img/works/img_works_candeal.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action" rel="noopener">
                   <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
-                    data-src="img/works/hairsalon.jpg" alt="" />
+                    data-src="img/works/img_works_candeal.jpg" alt="" loading="lazy" />
                 </a>
                 <figcaption class="works-body">
-                  <div class="works-title">サイト名が入る</div>
-                  <div class="works-text">Design / Coding(Responsive) </div>
-                  <div class="works-url"><a class="works-url-link" href="https://yahoo.co.jp" target="_blank">Link</a>
+                  <div class="works-ctg">
+                    <span>Responsive</span><span>JavaScript</span><span>jQuery</span><span>Sass</span></div>
+                  <div class="works-title"><a href="https://www.candeal.co.jp/" target="_blank"
+                      rel="noopener">株式会社キャンディル<span>(https://www.candeal.co.jp/)</span></a></div>
+                  <div class="works-text">Cording（サイト改修）、 速度改善</div>
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/works/img_works_dice.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action" rel="noopener">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/works/img_works_dice.jpg" alt="" loading="lazy" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg"><span>Responsive</span><span>JavaScript</span><span>Sass</span></div>
+                  <div class="works-title"><a href="https://www.diskcity.co.jp/" target="_blank"
+                      rel="noopener">ネットカフェダイス<span>(https://www.diskcity.co.jp/)</span></a></div>
+                  <div class="works-text">Cording（新規制作）</div>
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/works/img_works_drinavi.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action" rel="noopener">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/works/img_works_drinavi.jpg" alt="" loading="lazy" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg">
+                    <span>Responsive</span><span>JavaScript</span><span>jQuery</span><span>Sass</span></div>
+                  <div class="works-title"><a href="https://www.bus-dnavi.com/" target="_blank"
+                      rel="noopener">【どらなび】バス運転手専門の就職・転職支援求人サイト<span>(https://www.bus-dnavi.com/)</span></a></div>
+                  <div class="works-text">Cording（保守、定期的に特集ページの作成）</div>
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/works/img_works_imprexc.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action" rel="noopener">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/works/img_works_imprexc.jpg" alt="" loading="lazy" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg"><span>Responsive</span><span>JavaScript</span><span>jQuery</span></div>
+                  <div class="works-title"><a href="https://www.imprexc.jp/" target="_blank"
+                      rel="noopener">インプレックスアンドカンパニー株式会社<br>コーポレートサイト<span>(https://www.imprexc.jp/)</span></a></div>
+                  <div class="works-text">Cording（サイト改修）</div>
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/works/img_works_bridgelp.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action" rel="noopener">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/works/img_works_bridgelp.jpg" alt="" loading="lazy" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg"><span>Responsive</span><span>JavaScript</span><span>Sass</span></div>
+                  <div class="works-title"><a href="https://www.bridge-salon.jp/premium_salon/2020autumn/"
+                      target="_blank"
+                      rel="noopener">2020年秋プレミアムブリッジサロンLP<span>(https://www.bridge-salon.jp/premium_salon/2020autumn/)</span></a>
                   </div>
+                  <div class="works-text">Cording（保守、LP新規制作）</div>
                 </figcaption>
               </figure>
+
               <figure class="works-item">
-                <a href="img/works/girly.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
-                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/girly.jpg"
-                    alt="" />
+                <a href="img/works/img_works_reclick.png" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action" rel="noopener">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/works/img_works_reclick.png" alt="" loading="lazy" />
                 </a>
                 <figcaption class="works-body">
-                  <div class="works-title">サイト名が入る</div>
-                  <div class="works-text">Design</div>
+                  <div class="works-ctg"><span>Responsive</span><span>JavaScript</span><span>Sass</span></div>
+                  <div class="works-title"><a href="https://www.reclick.co.jp/" target="_blank"
+                      rel="noopener">自社サイト<span>(https://www.reclick.co.jp/)</span></a></div>
+                  <div class="works-text">Cording（サイト改修（事例ページ新規制作））、速度改善</div>
                 </figcaption>
               </figure>
+
               <figure class="works-item">
-                <a href="img/works/school.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
-                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/school.jpg"
-                    alt="" />
+                <a href="img/works/img_works_bar.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action" rel="noopener">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/works/img_works_bar.jpg" alt="" loading="lazy" />
                 </a>
                 <figcaption class="works-body">
-                  <div class="works-title">サイト名が入る</div>
-                  <div class="works-text">Design</div>
-                </figcaption>
-              </figure>
-              <figure class="works-item">
-                <a href="img/works/game.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
-                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/game.jpg"
-                    alt="" />
-                </a>
-                <figcaption class="works-body">
-                  <div class="works-title">サイト名が入る</div>
-                  <div class="works-text">Design</div>
-                </figcaption>
-              </figure>
-              <figure class="works-item">
-                <a href="img/works/fashion.jpg" data-size="960x720" class="works-image-wrapper works-link hover-action">
-                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png" data-src="img/works/fashion.jpg"
-                    alt="" />
-                </a>
-                <figcaption class="works-body">
-                  <div class="works-title">サイト名が入る</div>
-                  <div class="works-text">Design</div>
+                  <div class="works-ctg"><span>JavaScript</span><span>Sass</span></div>
+                  <div class="works-title"><a href="http://campo-bar.com/" target="_blank" rel="noopener">東京・錦糸町のメンバーズバー
+                      CAMPO BAR<span>(http://campo-bar.com/)</span></a></div>
+                  <div class="works-text">Cording（新規制作）、速度改善</div>
                 </figcaption>
               </figure>
             </div>
@@ -126,6 +162,115 @@
         </div>
       </section>
       <!-- /.works-section -->
+
+      <!-- .practice-section -->
+      <section class="works-section section" id="practice-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">PRACTICE</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              コーディング練習のために模写をしたサイト、制作したアプリケーションの記録です。<br>
+              模写コーディングについては、本サイトのソースは見ずに画像とフォントのみ流用して制作したものになります。
+            </p>
+          </div>
+          <div class="section-body works">
+            <div class="works-list js-my-gallery">
+              <figure class="works-item">
+                <a href="img/practice/img_reproduction_finc.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/practice/img_reproduction_finc.jpg" alt="" loading="lazy" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg">
+                    <span>模写コーディング</span><span>JavaScript</span><span>jQuery</span><span>Sass</span></div>
+                  <div class="works-title"><a href="https://nkgwrn.github.io/reproduction-site-finc_recruit/">株式会社 FiNC
+                      Technologies<br>採用情報ページ</a></div>
+                  <div class="works-url"><a class="works-url-link" href="https://company.finc.com/recruit/"
+                      target="_blank" rel="noopener">元Link(https://company.finc.com/recruit/)</a></div>
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/practice/img_reproduction_remo.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/practice/img_reproduction_remo.jpg" alt="" loading="lazy" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg"><span>模写コーディング</span><span>JavaScript</span><span>Sass</span></div>
+                  <div class="works-title"><a href="https://nkgwrn.github.io/reproduction-site-remo_lp/">Nature Remo
+                      LP</a></div>
+                  <div class="works-url"><a class="works-url-link" href="https://nature.global/jp/landing-page-dm-re/"
+                      target="_blank" rel="noopener">元Link(https://nature.global/jp/landing-page-dm-re/)</a>
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/practice/img_reproduction_ueno.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/practice/img_reproduction_ueno.jpg" alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg">
+                    <span>模写コーディング</span><span>JavaScript</span><span>jQuery</span><span>Sass</span></div>
+                  <div class="works-title"><a
+                      href="https://nkgwrn.github.io/reproduction-site-ueno_wonderer/">東京上野ワンダラー（Tokyo Ueno
+                      Wonderer）</a></div>
+                  <div class="works-url"><a class="works-url-link" href="https://ueno-wonderer.jp/" target="_blank"
+                      rel="noopener">元Link(https://ueno-wonderer.jp/)</a></div>
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/practice/img_reproduction_bake.jpg" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/practice/img_reproduction_bake.jpg" alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg">
+                    <span>模写コーディング</span><span>JavaScript</span><span>jQuery</span><span>Sass</span></div>
+                  <div class="works-title"><a href="https://nkgwrn.github.io/reproduction-site-bake/">ベイク チーズタルト</a>
+                  </div>
+                  <div class="works-url"><a class="works-url-link" href="https://cheesetart.com/" target="_blank"
+                      rel="noopener">元Link(https://cheesetart.com/)</a></div>
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/practice/img_react_stopwatch.png" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/practice/img_react_stopwatch.png" alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg"><span>React.js</span></div>
+                  <div class="works-title"><a href="https://nkgwrn.github.io/react-stopwatch/">React ストップウォッチ</a></div>
+                  <!-- <div class="works-text">Design, Cording</div> -->
+                </figcaption>
+              </figure>
+
+              <figure class="works-item">
+                <a href="img/practice/img_react_calculator.png" data-size="960x720"
+                  class="works-image-wrapper works-link hover-action">
+                  <img class="works-image lazyload fadein" src="img/placeholder4x3.png"
+                    data-src="img/practice/img_react_calculator.png" alt="" />
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-ctg"><span>React.js</span><span>Redux</span></div>
+                  <div class="works-title"><a href="https://nkgwrn.github.io/react-calculator/">React 電卓</a></div>
+                  <!-- <div class="works-text">Design, Cording</div> -->
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.practice-section -->
 
       <!-- .feature-section -->
       <section class="feature-section section" id="feature-section">
@@ -135,25 +280,25 @@
           </div>
           <div class="section-lead">
             <p>
-              １サイトの解説
+              最近の作品
             </p>
           </div>
           <div class="section-body feature">
             <div class="feature-item">
               <div class="feature-image-wrapper">
                 <a href="https://www.yahoo.co.jp/" target="_blank" class="hover-action"><img clas="feature-image"
-                    src="img/feature/feature.jpg" alt=""></a>
+                    src="img/feature/img_feature_site.jpg" alt=""></a>
               </div>
               <div class="feature-body">
                 <p>
-                  <span class="text-bold">サイト名：</span><br>サイト名が入る<br><a href="#" target="_blank">https://●●●.com</a></p>
-                <p><span class="text-bold">担当：</span><br>Design / Coding (Responsive) / WordPress / Writing</p>
-                <p><span
-                    class="text-bold">コメント：</span><br>テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  <span class="text-bold">サイト名：</span><br>株式会社キャンディル<br><a href="#"
+                    target="_blank">https://www.candeal.co.jp</a></p>
+                <p><span class="text-bold">担当：</span><br>Coding (Responsive) / WordPress / Speed ​​improvement</p>
+                <p><span class="text-bold">期間：</span><br>2020年11月 - 2020年12月</p>
+                <p><span class="text-bold">コメント：</span><br>
+                  サイトの大幅改修に携わりました。既存ページの改修、新規で追加になったページの制作も対応しました。<br>
+                  1ページあたりのメディア（主に画像）数が多いページが多く、読み込み速度が著しく下がることのないよう、PageSpeedInsight等活用し画像の最適化や遅延読み込みなど表示速度の部分も意識して制作を進めました。
                 </p>
-                <p>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
               </div>
             </div>
           </div>
@@ -161,170 +306,15 @@
       </section>
       <!-- /.feature-section -->
 
-      <!-- .about-section -->
-      <section class="about-section section" id="about-section">
-        <div class="inner">
-          <div class="section-heading">
-            <h2 class="heading-primary">ABOUT</h2>
-          </div>
-          <div class="section-lead">
-            <p>
-              こんにちは！
-            </p>
-          </div>
-          <div class="section-body about">
-            <div class="about-item">
-              <div class="about-image-wrapper">
-                <img class="about-image lazyload fadein" data-src="img/about/profile.jpg" alt="">
-              </div>
-              <div class="about-body">
-                <p>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-                <p>
-                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.about-section -->
-
-      <!-- .skill-section -->
-      <section class="skill-section section" id="skill-section">
-        <div class="inner">
-          <div class="section-heading">
-            <h2 class="heading-primary">SKILL</h2>
-          </div>
-          <div class="section-lead">
-            <p>
-              未経験ですが頑張ります！
-            </p>
-          </div>
-          <div class="section-body skill">
-            <div class="skill-list">
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="img/skill/icon_skill.png" alt="">
-                </div>
-                <div class="skill-body">
-                  <h3 class="skill-title">HTML5/CSS3</h3>
-                  <div class="skill-rating rating">
-                    <div class="rate rate4"></div>
-                  </div>
-                  <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="img/skill/icon_skill.png" alt="">
-                </div>
-                <div class="skill-body">
-                  <h3 class="skill-title">JavaScript</h3>
-                  <div class="skill-rating rating">
-                    <div class="rate rate3"></div>
-                  </div>
-                  <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="img/skill/icon_skill.png" alt="">
-                </div>
-                <div class="skill-body">
-                  <h3 class="skill-title">WordPress</h3>
-                  <div class="skill-rating rating">
-                    <div class="rate rate4"></div>
-                  </div>
-                  <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="img/skill/icon_skill.png" alt="">
-                </div>
-                <div class="skill-body">
-                  <h3 class="skill-title">Photoshop</h3>
-                  <div class="skill-rating rating">
-                    <div class="rate rate4"></div>
-                  </div>
-                  <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="img/skill/icon_skill.png" alt="">
-                </div>
-                <div class="skill-body">
-                  <h3 class="skill-title">Illustrator</h3>
-                  <div class="skill-rating rating">
-                    <div class="rate rate3"></div>
-                  </div>
-                  <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-image-wrapper">
-                  <img class="skill-image" src="img/skill/icon_skill.png" alt="">
-                </div>
-                <div class="skill-body">
-                  <h3 class="skill-title">XD</h3>
-                  <div class="skill-rating rating">
-                    <div class="rate rate3"></div>
-                  </div>
-                  <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /.skill-section -->
-
-      <!-- .contact-section -->
-      <section class="contact-section section" id="contact-section">
-        <div class="inner">
-          <div class="section-heading">
-            <h2 class="heading-primary">CONTACT</h2>
-          </div>
-          <div class="section-lead">
-            <p>
-              お問い合わせは、<br class="sp-only">SNSかメールでお願いいたします。
-            </p>
-          </div>
-          <div class="section-body contact">
-            <ul class="contact-list">
-              <li class="contact-item">
-                <a class="contact-link" href="https://twitter.com/" target="_blank"><img class="contact-image"
-                    src="img/contact/icon_tw.png" alt=""></a>
-              </li>
-              <li class="contact-item">
-                <a class="contact-link" href="https://www.facebook.com/" target="_blank"><img class="contact-image"
-                    src="img/contact/icon_fb.png" alt=""></a>
-              </li>
-            </ul>
-            <div class="contact-text">xxxxxx@gmail.com</div>
-          </div>
-        </div>
-      </section>
-      <!-- /.contact-section -->
-
     </main>
 
     <!-- .footer -->
     <footer class="footer">
       <div class="page-top" id="js-page-top">
-        トップへもどる
+        PAGE TOP
       </div>
       <div class="inner">
-        <div class="copyright">Copyright&copy;TARO YAMADA. All Rights Reserved.</div>
+        <div class="copyright">Copyright&copy;Rino. All Rights Reserved.</div>
       </div>
     </footer>
     <!-- /.footer -->
@@ -405,4 +395,5 @@
   <script type='text/javascript' src="js/lazysizes/lazysizes.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
 </body>
+
 </html>
