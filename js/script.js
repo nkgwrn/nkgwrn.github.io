@@ -31,18 +31,18 @@ $(function () {
     return false;
   });
 
-  //ページトップ:WIP!
-  // $("#js-page-top").on("click", function () {
-  //   $("body,html").animate(
-  //     {
-  //       scrollTop: 0,
-  //     },
-  //     1000
-  //   );
-  //   return false;
-  // });
+  //ページトップ
+  $("#js-page-top").on("click", function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+    return false;
+  });
 
-  // //ページ内ナビゲーション
+  // //ページ内ナビゲーション:WIP!
   // var menu = $("#js-gnav li a"),
   //   menuLen = menu.length,
   //   con = $(".section"),
